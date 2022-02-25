@@ -1,7 +1,7 @@
 import requests
 import json
 
-class send_requests:
+class send_requests():
     def __init__(self, URL, Method, HEADERS, DATA = None):
         self.res = self.send_requests(URL, Method, HEADERS, DATA)
 

@@ -11,6 +11,7 @@ def getyaml(path):
 
 
 if __name__ == '__main__':
-    path = "./config/host.yaml"
+    path = r"../data/qyb/qyb_lianxi.yaml"
+    # path = r"../config/host.yaml"
     data = getyaml(path)
     print(data)
