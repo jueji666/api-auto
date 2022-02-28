@@ -1,12 +1,12 @@
 import unittest
-import tools.send_requests as send_request
-import tools.getyaml as getyaml
+import tools.tool_sendhttprequest as send_request
+import tools.tool_readyaml as getyaml
 
 class Testrequest(unittest.TestCase):
     host = ""
     @classmethod
     def setUpClass(cls):
-        path = "./../../config/host.yaml"
+        path = "./../../config/config_host.yaml"
         data = getyaml.getyaml(path)
         cls.host =data["企云宝"]["test"]
 

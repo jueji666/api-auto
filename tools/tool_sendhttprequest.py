@@ -1,9 +1,9 @@
 import requests
 import json
 
-class send_requests():
+class SendHttpRequest():
     def __init__(self, URL, Method, HEADERS, DATA = None):
-        self.res = self.send_requests(URL, Method, HEADERS, DATA)
+        self.res = self.send_request(URL, Method, HEADERS, DATA)
 
     def send_get(self, URL, HEADERS, DATA = None):
         res = requests.get(url=URL, headers=HEADERS, params=DATA).json()
@@ -16,9 +16,9 @@ class send_requests():
             res = requests.post(url=URL, headers=HEADERS, data=DATA).json()
         return json.dumps(res, indent=2, sort_keys=True, ensure_ascii= False)
 
-    def send_requests(self, URL, Method, HEADERS, DATA = None):
+    def send_request(self, URL, Method, HEADERS, DATA = None):
         res = None
-        if Method == "get":
+        if Method == "get" or Method == "GET":
             res = self.send_get(URL, HEADERS, DATA)
         else:
             res = self.send_post(URL, HEADERS,  DATA)
@@ -33,6 +33,4 @@ if __name__ == '__main__':
     data = {
         "role_name": "{}".format(6)
         }
-    print(send_requests(url,"post",headers,data).res)
-    # print(send_requests().send_get(url,headers,data))
-    # print(send_requests().send_post(url,headers,0,data))
+    print(SendHttpRequest(url,"post",headers,data).res)
