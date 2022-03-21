@@ -1,6 +1,6 @@
 import unittest
 import tools.tool_sendhttprequest as send_request
-import tools.tool_readyaml as getyaml
+import tools.tool_readfile as getyaml
 
 class Testrequest(unittest.TestCase):
     host = ""

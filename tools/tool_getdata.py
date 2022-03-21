@@ -1,11 +1,11 @@
-from tools.tool_readyaml import ReadYaml
+from tools.tool_readfile import ReadFile
 
 class GetData():
     def __init__(self, filepath):
         self.filepath = filepath
 
     def getyamldata(self):
-        file = ReadYaml(self.filepath).getyaml()
+        file = ReadFile(self.filepath).getyaml()
         arrs = []
         for data in file.values():
             arrs.append((data.get("name"),
