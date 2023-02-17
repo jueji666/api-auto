@@ -1,3 +1,16 @@
-/.git
-/.idea
+# pycharm
 /venv/
+/.idea
+*.pyc
+
+# pytest
+/.pytest_cache
+/case/.pytest_cache
+
+# git
+/.git
+
+
+# project
+*.log
+reports/

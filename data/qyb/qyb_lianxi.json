@@ -1,0 +1,36 @@
+[
+  {
+    "name": "测试用例1",
+    "requests": {
+      "path": "/sub_user/saveRole",
+      "method": "post",
+      "data": {
+                "role_name": "6"
+              },
+      "headers": {
+                "content-type": "application/json;charset=UTF-8",
+                "Cookie": "PHPSESSID=8kmi25i6e28jdu1ehvi0bqap0l;"
+                }
+                },
+    "expect": {
+      "contains": "errcode"
+    }
+  },
+{
+    "name": "测试用例2",
+    "requests": {
+      "path": "/sub_user/saveRole",
+      "method": "post",
+      "data": {
+                "role_name": "6"
+              },
+      "headers": {
+                "content-type": "application/json;charset=UTF-8",
+                "Cookie": "PHPSESSID=8kmi25i6e28jdu1ehvi0bqap0l;"
+                }
+                },
+    "expect": {
+      "contains": "message"
+    }
+  }]
+

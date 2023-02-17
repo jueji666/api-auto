@@ -1,6 +1,7 @@
 # 测试环境：test  生产环境：pro
 
 "qyb" :
-  "test" : "https://qyb.beta.wxb.com"
-  "pro" : "https://qyb.wxb.com"
-
+  "test" : https://qyb.beta.wxb.com
+  "pro" :
+      web: https://qyb.wxb.com
+      api: https://api-qyb.beta.wxb.com
