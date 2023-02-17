@@ -22,7 +22,7 @@
       "path": "/sub_user/saveRole",
       "method": "post",
       "data": {
-                "role_name": "6"
+                "role_name": "{{role_name}}"
               },
       "headers": {
                 "content-type": "application/json;charset=UTF-8",
@@ -31,6 +31,9 @@
                 },
     "expect": {
       "contains": "message"
-    }
+    },
+  "extract":{
+    "errcode": "errcode"
+  }
   }]
 

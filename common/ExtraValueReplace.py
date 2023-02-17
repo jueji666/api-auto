@@ -4,7 +4,7 @@ from debug_talk import DebugTalk
 from tools.LoggerUtil import write_log
 
 
-def replace_value(data, filepath ="./../extract.yaml"):
+def replace_value(data, filepath ="extract.yaml"):
     """
     接口关联替换方法封装
     将{{变量}}替换成 对应的变量数据
