@@ -1,6 +1,7 @@
 # pycharm
 /venv/
 /.idea
+/__pycache__
 *.pyc
 
 # pytest
